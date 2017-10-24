@@ -1,0 +1,149 @@
+section.we-are {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  p {
+    font-size: 1.8rem;
+  }
+  div.img {
+    background: url(../img/weare.png) no-repeat center center/contain;
+	width: 594px;
+    height: 274px;
+    display: block;
+    margin: 7em auto 5em auto;
+  }
+  div.midearth {
+	margin: 0 auto;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+	/*margin-left: 7%;*/
+	li {
+      display: block;
+	  margin: 1em;
+	  img {
+		display: block;
+		height: 10rem;
+		width: 6rem;
+	  }
+	  a {
+		display: block;
+		span {
+		  font-weight: bold;
+		  position: relative;
+		  left: -20px;
+		  top: -60px;
+		  white-space: nowrap;
+		}
+	  }
+	}
+	li:first-child {
+	  img {
+		width: 3.25rem !important;
+	  }
+	  a span {
+		white-space: nowrap;
+	  }
+	}
+  }
+}
+@media (max-height: 700px) {
+	section.we-are {
+		div.img {
+			max-height: 205px;
+			max-width: 445px;
+			margin: 2em auto 1em auto;
+		}
+		ul {
+			max-height: 48px;
+			margin-top: -20px !important;
+			li {
+				margin: 1em;
+				img {
+					height: 80px;
+					width: 48px;
+				}
+				a span {
+					font-weight: bold !important;
+					font-size: 0.7em !important;
+					left: -15px;
+					top: -20px;
+				}
+			}
+			li:first-child {
+				img {
+					max-width: 30px;
+				}
+				a span {
+					left: -15px;
+				}
+			}
+		}
+	}
+}
+@media (max-height: 512px) {
+  section.we-are {
+	div.img {
+	  max-height: 137px;
+	  max-width: 297px;
+	  margin: 2em auto 1em auto;
+	}
+    .tabs-container {
+	  margin: 0 auto;
+	  max-height: 120px;
+	  max-width: 520px;
+      p { font-size: 0.7em !important; }
+    }
+	ul {
+	  max-height: 48px;
+	  margin-top: -20px !important;
+	  li {
+		margin: 1em;
+		img {
+		  height: 40px;
+		  width: 24px;
+		}
+		a span {
+		  font-weight: bold !important;
+		  font-size: 0.7em !important;
+		  left: -15px;
+		  top: -20px;
+		}
+	  }
+	  li:first-child {
+		img {
+		  max-width: 15px;
+		}
+		a span {
+		  left: -15px;
+		}
+	  }
+	}
+  }
+}
+
+@media (max-width: 767px) {
+  section.we-are {
+  	div.img {
+	  max-height: 137px;
+	  max-width: 297px;
+	  margin: 2em auto 1em auto;
+  	}
+    .tabs-container {
+      p { font-size: 0.96em; }
+    }
+  }
+}
+@media (max-width: 384px) {
+  section.we-are {
+    .tabs-container {
+	  margin: 0 !important;
+      p { font-size: 0.8em; }
+    }
+  }
+}

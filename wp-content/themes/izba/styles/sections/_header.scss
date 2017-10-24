@@ -1,0 +1,179 @@
+header.content-header {
+  width: 100%;
+  padding: 1rem 0;
+  position: relative;
+
+  .container:first-child { height: 300px; }
+  .col-md-4:first-child { height: 100%; position: relative;
+	a {color: white;font-weight: bold;text-decoration: none; display: inline-block; margin: 5em 0 0 5em;width: 60px; height: 60px;}
+    img {width: 60px; height: 60px; float: left;}
+	span { display: block; font-size: 1.6em; margin-left: 70px; width: 5em; }
+	ul {
+	  /*clear: both;*/
+	  display: none;
+	  margin: -0.1em 0 0 5em;
+	  padding: 0;
+	  width: 9em;
+	  li {
+		background-color: #FB0000;
+		width: 9em;
+		padding: 0.7em;
+		list-style: none;
+		text-align: center;
+		a {
+		  display: inline !important;
+		  max-height: 16px;
+		  list-style: none;
+		  text-transform: uppercase;
+		  text-decoration: none;
+		  color: #fff;
+		  margin: 0 !important;
+		  padding: 0 !important;
+		}
+	  }
+	}
+  }
+  .col-md-4:nth-child(2) { height: 100%; }
+  .logo-hdr { position: static; }
+  .logo-header-languages{
+	margin: 0 auto;
+	width: 205px;
+    .languages { font-size: 1.2em;font-weight: bold;text-align: center; color:white; }
+    .navbrand { background: url(../img/logo.png) no-repeat center/contain; display: block; width: 200px; height: 250px; margin: 0 auto; }
+    span {
+	  margin: 10px 5px;
+	  &:nth-child(1),&:nth-child(3),&:nth-child(5) {
+		&:hover {
+		  color: #b70000; cursor: pointer;
+		}
+	  }
+	}
+  }
+
+  .col-md-4:last-child {
+	height: 100%;
+	position: relative;
+	text-align: right;
+	a {
+	  color: white;
+	  font-weight: bold;
+	  text-decoration: none;
+	  width: 13em;
+	  display: inline-block;
+	  margin: 5em 5em 0 0;
+	}
+    img {
+	  width: 60px;
+	  height: 60px;
+	  float: right;
+	}
+	span {
+	  display: block;
+	  font-size: 1.6em;
+	  width: 5em;
+	}
+  }
+
+
+  .header-prod {
+	div#prod {
+	  background: url(../img/prod.png) no-repeat center center/contain;
+	  height: 300px;
+	  width: 450px;
+	  min-height: 120px;
+	  min-width: 180px;
+	}
+	float: none;
+	display: block;
+	min-height: 60px;
+	min-width: 90px;
+	max-width: 450px;
+	max-height: 300px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+    .order {width: 66%; max-width: 220px; background: #b70000; color:white; border:none; display: block; padding: 10px 30px; text-align: center; font-size: 1.6em; margin: 0 auto;}
+    .link-to-section {
+      img {
+       margin: 0 auto;
+	   width: 25px;
+	   height: auto;
+      }
+    }
+  }
+  .btn-book, .col-md-8:last-child {height: auto; margin: 30px auto;}
+
+}
+
+/*----------MEDIA-------------------------------------------------------------------------------------*/
+@media (max-height: 640px) {
+  header.content-header {
+	div#prod {
+	  margin: 0 auto;
+	  max-height: 120px;
+	  max-width: 180px;
+	}
+  }
+}
+@media (max-height: 512px) {
+  header.content-header {
+	div#prod {
+	  display: none;
+	}
+  }
+}
+@media (max-width: 1000px) {
+  header.content-header .container:first-child {
+	height:auto; .col-md-4 {
+	  a, button {
+	    position: static;
+	  }
+	}
+  }
+}
+@media (max-width: 992px) {
+  header.content-header .col-md-4:first-child ul {margin: -0.1em 0 0 -2.1em !important;}
+  header.content-header .col-xs-2 a { margin: 0 0 0 -30px !important; }
+}
+@media (max-width: 768px) {
+  header.content-header .col-md-4:first-child ul {margin: 0 !important;}
+  header.content-header .col-xs-2 a { margin: 0 !important; display: inline !important; }
+  /*.col-sm-8 {
+	width: 200px !important;
+  }*/
+  header.content-header .col-xs-2 a > span {
+	display: none !important;
+	/*width: 0 !important;*/
+  }
+}
+@media screen and (max-width: 400px) {
+	header.content-header {
+	/*.col-md-4:first-child {
+	  img {
+		width: 60px;
+		height: 60px;
+		float: none;
+		margin-left: 2em;
+	  }
+	  ul {margin: 0 0 0 2em !important;}
+	}*/
+	/*.col-md-4:last-child img {
+	  width: 60px;
+	  height: 60px;
+	  float: none;
+	}*/
+	.navbrand { max-width: 80%; margin: 0 auto !important; }
+	.logo-header-languages {
+	  margin: 0 -15px;
+	  width: 205px;
+	}
+	.header-prod div#prod {
+	  background: url(../img/prod.png) no-repeat center center/contain;
+	  min-height: 60px;
+	  min-width: 90px;
+	  width: 100%;
+	  height: 300px;
+	  padding: 0;
+	}
+  }
+}

@@ -1,0 +1,52 @@
+* {outline:none;}
+html {font-size:62.5%;}
+html,body {font-family: 'Proxima Nova';}
+/*img {width: 100%; display: block;}*/
+header, main, footer {overflow: hidden !important;}
+header, section, footer,.modal-fullscreen {
+  height: 100%;
+  hr {
+    border-color: red;
+    width: 17%;
+  }
+  h2 {
+    /*font-weight: bold;*/
+    font-weight: 600;
+    font-size: 1cm;
+	text-align: center;
+	text-transform: uppercase;
+	/*width: 100%;*/
+  }
+}
+#genphoto {
+	font-size: 1.6em;
+}
+#vizinvite {
+	color: #F90000;
+	text-decoration: underline;
+}
+section {width: 100%;}
+.parallax-window { min-height: 99vh; max-height: 110vh; }
+.zeropad { padding: 0 !important; margin: 0 !important; }
+.al { text-align: left; }
+.ar { text-align: right; }
+#butbut {
+  top: 0;
+}
+.btn-izba {
+	margin: 0 auto;
+	button {
+		background-color: #F90000;
+		border: none; 
+		color: #fff;
+		height: 5rem;
+		text-transform: uppercase;
+		width: 28rem;
+		position: relative;
+		top: -100px;
+	}
+}
+a:link, a:visited, a:hover, a:active {
+	color: white;
+	text-decoration: none;
+}

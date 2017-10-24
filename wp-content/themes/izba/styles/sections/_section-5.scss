@@ -1,0 +1,134 @@
+section.contactbox {
+  overflow-y: visible;
+  padding: 5rem 0 1rem 0;
+  div.block-inner {
+    background: rgba(255,255,255,0.7);
+	min-height: 85vh;
+  }
+  a:link, a:visited, a:hover, a:active {
+	color: black !important;
+  }
+  address {
+	font-weight: 200;
+	font-size: 30px;
+	text-align: center;
+	margin: 0 auto;
+	p {
+	  color: #E40005;
+	  font-size: 45px;
+	  font-weight: 200;
+	  margin: 0 auto;
+	  text-align: center;
+	}
+	&:nth-child(3) {
+		margin-top: 10px;
+	}
+	span {
+	  display: inline-block;
+	  margin: 1em auto;
+	}
+  }
+  address:last-child {
+	color: #E40005;
+  }
+  .social {
+    display: flex;
+    color: #E40005;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 20px auto 30px auto;
+    text-align: center;
+    width: 170px;
+    div {
+      margin: 2px !important;
+    }
+  }
+  .social_icon_fb {
+    margin-right: 45px;
+  }
+  .social:last-child {
+	float: none !important;
+	clear: both;
+  }
+  .btn-izba {
+	font-size: 0.5em;
+	font-weight: bold;
+  }
+}
+@media (max-height: 768px) {
+  section.contactbox {
+    address {
+      p {
+      font-size: 2rem;
+      }
+      span {
+      font-size: 2rem;
+      }
+    }
+    div.social {
+      margin: 0 auto !important;
+      max-width: 66px;
+      div {
+        margin: 0 auto !important;
+        max-width: 32px;
+        img {
+          max-height: 32px;
+          max-width: 32px;
+        }
+      }
+    }
+  }
+}
+@media (max-height: 512px) {
+  section.contactbox {
+	min-height: 130vh;
+	h2,hr {
+      margin: 2px auto !important;
+    }
+	address {
+	  p {
+		font-size: 1.3rem;
+	  }
+	  span {
+		font-size: 1.3rem;
+	  }
+	}
+	div.social {
+	  margin: 0 auto !important;
+	  max-width: 66px;
+	  div {
+		margin: 0 auto !important;
+		max-width: 32px;
+		img {
+		  max-height: 32px;
+		  max-width: 32px;
+		}
+	  }
+	}
+  }
+}
+@media (max-width: 370px) {
+  section.contactbox {
+    address {
+      p {
+      font-size: 2rem;
+      }
+      span {
+      font-size: 2rem;
+      }
+    }
+    div.social {
+      margin: 5px auto 20px auto !important;
+      max-width: 66px;
+      div {
+      margin: 0 auto !important;
+      max-width: 32px;
+      img {
+        max-height: 32px;
+        max-width: 32px;
+      }
+      }
+    }
+  }
+}
+#block5 {margin-bottom: 0 !important;}

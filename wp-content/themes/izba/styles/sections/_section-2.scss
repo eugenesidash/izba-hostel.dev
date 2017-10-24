@@ -1,0 +1,235 @@
+section.number {
+  background-repeat: repeat !important;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  padding: 5vh 0 5vh 0;
+  div.btn-izba button {
+    max-width: 70%;
+    top: 10px !important;
+  }
+  div.block-inner {
+    background: rgba(0,0,0,0.7);
+    height: 90vh;
+    padding-bottom: 5vh;
+    /*div.container {
+      margin-top: -5vh !important;
+    }*/
+  }
+  p {
+    margin: 2em auto;
+  }
+  div.apartments {
+    height: 30.9vw;
+    margin: 0 auto;
+    padding: 0;
+    width: 60vw;
+    a {
+      background-size: contain;
+      display: block;
+      float: left;
+      min-height: 50%;
+      min-width: 50%;
+      max-height: 50%;
+      max-width: 50%;
+      span {
+        img {
+          width: 1.68vw;
+          height: 2.2vw;
+          margin-bottom: 0.5vw;
+        }
+        font-size: 3vw;
+        position: relative;
+        top: -0.7em;
+      }
+    }
+    a:nth-of-type(even) {
+      span {
+        left: 0.7em;
+      }
+    }
+    a:nth-of-type(odd) {
+      span {
+        left: 0.2em;
+      }
+    }
+  }
+}
+
+/*@media (max-width: 480px) and (orientation: portrait) {
+  section.number {
+    h2,hr {
+      margin: 2px auto !important;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 2em auto;
+    }
+    div.apartments {
+      min-height: 30.90vw !important;
+      min-width: 60vw !important;
+      #num4ol {
+        left: 12vw;
+        top: -1.25vw;
+      }
+      #num8ol {
+        left: -1.875vw;
+        top: 4vw;
+      }
+      #num10ol {
+        left: 11vw;
+        top: 4vw;
+      }
+    }
+  }
+}*/
+@media (max-width: 480px) and (orientation: portrait) {
+  section.number {
+    h2,hr {
+      margin: 2px auto !important;
+    }
+    p {
+      font-size: 1em;
+      margin: 2em auto;
+    }
+    div.apartments {
+      min-height: 41.2vw !important;
+      min-width: 80vw !important;
+      #num4ol {
+        left: 38vw;
+        top: -1.25vw;
+      }
+      #num8ol {
+        left: -1.875vw;
+        top: 17vw;
+      }
+      #num10ol {
+        left: 36vw;
+        top: 17vw;
+      }
+    }
+  }
+}
+/*@media (min-width: 1024px) and (min-aspect-ratio: 16/9) {
+  section.number div.apartments {
+    max-height: 18.25vw !important;
+    max-width: 36vw !important;
+    #num4ol {
+      left: 16.12vw;
+      top: -1.25vw;
+    }
+    #num8ol {
+      left: -1.875vw;
+      top: 6.84vw;
+    }
+    #num10ol {
+      left: 14.875vw;
+      top: 6.84vw;
+    }
+  }
+}
+@media (min-width: 1024px) and (min-aspect-ratio: 9/4) {
+  section.number div.apartments {
+    max-height: 20.6vw !important;
+    max-width: 40vw !important;
+    #num4ol {
+      left: 23.12vw;
+      top: -1.25vw;
+    }
+    #num8ol {
+      left: -1.875vw;
+      top: 8.84vw;
+    }
+    #num10ol {
+      left: 21.875vw;
+      top: 9.84vw;
+    }
+  }
+}*/
+/*@media (min-width: 1024px) and (min-aspect-ratio: 13/5) {
+  section.number div.apartments {
+    max-height: 15.45vw !important;
+    max-width: 30vw !important;
+    #num4ol {
+      left: 12vw;
+      top: -1.25vw;
+    }
+    #num8ol {
+      left: -1.875vw;
+      top: 4vw;
+    }
+    #num10ol {
+      left: 11vw;
+      top: 4vw;
+    }
+  }
+}*/
+@media (min-width: 1024px) {
+  section.number {
+    p {
+      font-size: 1.4em;
+      max-width: 960px;
+      margin: 0 auto 2em auto;
+      display: inline-block;
+    }
+  }
+}
+@media (min-height: 768px) and (orientation: portrait) {
+  section.number {
+    p {
+      font-size: 1.4em;
+      max-width: 960px;
+      margin: 3em auto;
+      display: inline-block;
+    }
+  }
+}
+@media (min-height: 768px) and (orientation: landscape) {
+  section.number {
+    p {
+      font-size: 1.2em;
+      max-width: 960px;
+      margin: 1em auto;
+      display: inline-block;
+    }
+  }
+}
+@media (max-height: 767px) and (max-aspect-ratio: 16/9) and (orientation: landscape) {
+  section.number {
+    h2,hr {
+      margin: 2px auto !important;
+    }
+    p {
+      font-size: 0.9em;
+      margin: 2em auto;
+    }
+    /*div.apartments {
+      max-height: 25.75vw !important;
+      max-width: 50vw !important;
+      #num4ol {
+          left: 23.12vw;
+          top: -1.25vw;
+      }
+      #num8ol {
+          left: -1.875vw;
+          top: 9.84vw;
+      }
+      #num10ol {
+          left: 21.875vw;
+          top: 9.84vw;
+      }
+    }*/
+  }
+}
+@media (max-height: 512px) and (max-aspect-ratio: 16/9) and (orientation: landscape) {
+  section.number {
+    h2,hr {
+      margin: 2px auto !important;
+    }
+    p {
+      font-size: 0.8em;
+      margin: 1em !important;
+    }
+  }
+}
